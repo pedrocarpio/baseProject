@@ -2,6 +2,7 @@ package pe.scytl.app.dao.jdbc;
 
 import pe.scytl.app.dao.GenericDao;
 import pe.scytl.app.entity.Territory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;

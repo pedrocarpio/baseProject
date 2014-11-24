@@ -21,6 +21,17 @@ import java.net.UnknownHostException;
 @Configuration
 @ComponentScan(basePackages = { "pe.scytl.app.service", "pe.scytl.app.dao" })
 public class AppConfig {
+
+    @Bean
+    public DataSource dataSource(){
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://192.168.2.44:3306/base");
+        dataSource.setUsername( "root" );
+        dataSource.setPassword( "db3sac99" );
+        return dataSource;
+    }
+
 /*
     @Value("${app.db.name}")
     private String appDbName;
