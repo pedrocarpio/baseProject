@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  */
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = { "pe.reem.app.controller" })
+@ComponentScan(basePackages = { "pe.scytl.app.controller" })
 public class MvcConfig extends WebMvcConfigurationSupport {
 
     @Override

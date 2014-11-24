@@ -19,7 +19,7 @@ import java.net.UnknownHostException;
  * Created by robertoespinoza on 20/11/14.
  */
 @Configuration
-@ComponentScan(basePackages = { "pe.reem.app.service", "pe.reem.app.dao" })
+@ComponentScan(basePackages = { "pe.scytl.app.service", "pe.scytl.app.dao" })
 public class AppConfig {
 /*
     @Value("${app.db.name}")
