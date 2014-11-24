@@ -13,6 +13,10 @@ import java.util.List;
 @Repository
 public class TerritoryDao extends JdbcDaoSupport implements GenericDao<Territory> {
 
+    @Autowired
+    TerritoryDao(DataSource dataSource){
+        setDataSource(dataSource);
+    }
 
     @Override
     public List<Territory> findAll() {
